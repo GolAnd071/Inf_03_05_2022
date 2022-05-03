@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortingWordsInLexicographic
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stack", "Stack\Stack.vcxproj", "{CD9C8FB5-8126-4308-9C64-4FD869CA69D0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UniqueNumbers", "UniqueNumbers\UniqueNumbers.vcxproj", "{DBB06408-C4A0-4B7D-BE00-09C959887076}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{CD9C8FB5-8126-4308-9C64-4FD869CA69D0}.Release|x64.Build.0 = Release|x64
 		{CD9C8FB5-8126-4308-9C64-4FD869CA69D0}.Release|x86.ActiveCfg = Release|Win32
 		{CD9C8FB5-8126-4308-9C64-4FD869CA69D0}.Release|x86.Build.0 = Release|Win32
+		{DBB06408-C4A0-4B7D-BE00-09C959887076}.Debug|x64.ActiveCfg = Debug|x64
+		{DBB06408-C4A0-4B7D-BE00-09C959887076}.Debug|x64.Build.0 = Debug|x64
+		{DBB06408-C4A0-4B7D-BE00-09C959887076}.Debug|x86.ActiveCfg = Debug|Win32
+		{DBB06408-C4A0-4B7D-BE00-09C959887076}.Debug|x86.Build.0 = Debug|Win32
+		{DBB06408-C4A0-4B7D-BE00-09C959887076}.Release|x64.ActiveCfg = Release|x64
+		{DBB06408-C4A0-4B7D-BE00-09C959887076}.Release|x64.Build.0 = Release|x64
+		{DBB06408-C4A0-4B7D-BE00-09C959887076}.Release|x86.ActiveCfg = Release|Win32
+		{DBB06408-C4A0-4B7D-BE00-09C959887076}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
