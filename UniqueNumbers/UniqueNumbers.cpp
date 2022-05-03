@@ -2,7 +2,6 @@
 //
 
 #include <iostream>
-#include <vector>
 #include <unordered_set>
 #include <algorithm>
 
@@ -10,13 +9,11 @@ int main()
 {
 	size_t n;
 	std::cin >> n;
-	std::vector<int32_t> num;
 	std::unordered_set<int32_t> ans;
-	std::generate_n(std::back_inserter(num), n, [&ans]()
+	std::generate_n(std::inserter(ans, ans.begin()), n, []()
 		{
 			int32_t x;
 			std::cin >> x;
-			ans.insert(x);
 			return x;
 		});
 	std::cout << ans.size() << '\n';

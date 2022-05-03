@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UniqueNumbers", "UniqueNumb
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReversePolishNotation", "ReversePolishNotation\ReversePolishNotation.vcxproj", "{D121C3E0-C1C7-4E3D-B32B-3813DB902DAF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TheMostPopularWord", "TheMostPopularWord\TheMostPopularWord.vcxproj", "{0047124F-971F-4651-A5AC-5C9CB5FFB88A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{D121C3E0-C1C7-4E3D-B32B-3813DB902DAF}.Release|x64.Build.0 = Release|x64
 		{D121C3E0-C1C7-4E3D-B32B-3813DB902DAF}.Release|x86.ActiveCfg = Release|Win32
 		{D121C3E0-C1C7-4E3D-B32B-3813DB902DAF}.Release|x86.Build.0 = Release|Win32
+		{0047124F-971F-4651-A5AC-5C9CB5FFB88A}.Debug|x64.ActiveCfg = Debug|x64
+		{0047124F-971F-4651-A5AC-5C9CB5FFB88A}.Debug|x64.Build.0 = Debug|x64
+		{0047124F-971F-4651-A5AC-5C9CB5FFB88A}.Debug|x86.ActiveCfg = Debug|Win32
+		{0047124F-971F-4651-A5AC-5C9CB5FFB88A}.Debug|x86.Build.0 = Debug|Win32
+		{0047124F-971F-4651-A5AC-5C9CB5FFB88A}.Release|x64.ActiveCfg = Release|x64
+		{0047124F-971F-4651-A5AC-5C9CB5FFB88A}.Release|x64.Build.0 = Release|x64
+		{0047124F-971F-4651-A5AC-5C9CB5FFB88A}.Release|x86.ActiveCfg = Release|Win32
+		{0047124F-971F-4651-A5AC-5C9CB5FFB88A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

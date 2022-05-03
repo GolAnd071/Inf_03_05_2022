@@ -1,27 +1,34 @@
-﻿// SortingWordsInLexicographicOrder.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// TheMostPopularWord.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
-#include <algorithm>
 #include <set>
+#include <map>
 #include <string>
+#include <algorithm>
 
 int main()
 {
 	size_t n;
 	std::cin >> n;
-	std::set<std::string> ans;
+	std::multiset<std::string> ans;
 	std::generate_n(std::inserter(ans, ans.begin()), n, []()
-		{ 
+		{
 			std::string s;
 			std::cin >> s;
 			std::transform(s.begin(), s.end(), s.begin(), std::tolower);
 			return s;
 		});
-	std::for_each(ans.rbegin(), ans.rend(), [](std::string s)
+	std::map<std::string, size_t> ms;
+	std::transform(ans.begin(), ans.end(), std::inserter(ms, ms.begin()), [&ans](std::string s)
 		{
-			std::cout << s << '\n';
+			return std::make_pair(s, ans.count(s));
 		});
+	auto res = std::max_element(ms.begin(), ms.end(), [](auto& const a, auto& const b)
+		{
+			return a.second < b.second;
+		});
+	std::cout << (*res).first << ' ' << (*res).second << '\n';
 	return 0;
 }
 

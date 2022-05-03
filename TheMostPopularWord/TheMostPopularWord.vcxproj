@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cd9c8fb5-8126-4308-9c64-4fd869ca69d0}</ProjectGuid>
-    <RootNamespace>Stack</RootNamespace>
+    <ProjectGuid>{0047124f-971f-4651-a5ac-5c9cb5ffb88a}</ProjectGuid>
+    <RootNamespace>TheMostPopularWord</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="TheMostPopularWord.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
