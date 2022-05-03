@@ -2,10 +2,23 @@
 //
 
 #include <iostream>
+#include <stack>
 
 int main()
 {
-
+	int32_t value;
+	std::stack<int32_t> st;
+	while (std::cin >> value && value) {
+		if (value > 0)
+			st.push(value);
+		else if (!st.empty()) {
+			st.top() += value;
+			if (st.top() <= 0)
+				st.pop();
+		}
+	}
+	std::cout << st.size() << ' ' << (st.empty() ? -1 : st.top()) << '\n';
+	return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
