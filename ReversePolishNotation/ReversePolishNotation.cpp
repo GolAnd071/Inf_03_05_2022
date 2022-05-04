@@ -10,28 +10,29 @@ int main()
 	std::stack<int32_t> opz;
 	std::string s;
 	while (std::getline(std::cin, s) && s[0] != '=') {
-		if (s.length() == 1 && s[0] < '0') {
-			int32_t n2 = opz.top();
-			opz.pop();
+		try {
+			opz.push(std::stoi(s));
+		}
+		catch (std::invalid_argument const& ex) {
 			int32_t n1 = opz.top();
+			opz.pop();
+			int32_t n2 = opz.top();
 			opz.pop();
 			switch (s[0]) {
 			case '+':
-				opz.push(n1 + n2);
+				opz.push(n2 + n1);
 				break;
 			case '-':
-				opz.push(n1 - n2);
+				opz.push(n2 - n1);
 				break;
 			case '*':
-				opz.push(n1 * n2);
+				opz.push(n2 * n1);
 				break;
 			case '/':
-				opz.push(n1 / n2);
+				opz.push(n2 / n1);
 				break;
 			}
 		}
-		else
-			opz.push(std::stoi(s));
 	}
 	std::cout << opz.top() << '\n';
 	return 0;
